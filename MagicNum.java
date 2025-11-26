@@ -9,8 +9,8 @@ public class MagicNum {
 
         boolean home_page = true;
         int attempt = 5;
-        // int sys = (int) (Math.random() * 100);
-        int sys = 5;
+        int sys = (int) (Math.random() * 100);
+
         do {
             System.out.println("Vannakam to Magic Number");
             System.out.println("------------------------");
@@ -26,7 +26,6 @@ public class MagicNum {
                         System.out.println("Its Low");
                     } else if (sys == n) {
                         System.out.println("\nYou got it Buddy...!\n");
-                        // attempt = 5;
                         game = false;
                         Thread.sleep(2000);
 
@@ -37,8 +36,7 @@ public class MagicNum {
                             System.out.println("Processing....\n");
                             Thread.sleep(3000);
                             attempt = 5;
-                            // sys = (int) (Math.random() * 100);
-                            sys = 5;
+                            sys = (int) (Math.random() * 100);
 
                         } else if (opp == 2) {
                             game = false;
@@ -54,7 +52,6 @@ public class MagicNum {
                     home_page = false;
                     System.out.println("\nCross the limit, Try again..! \n   Thank you ..:)");
 
-                    // home_page = false;
                 }
 
             } while (game);
